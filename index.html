@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme = "dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container text-center mt-2">
+        <h1>Stock Market</h1>
+        <button class="btn btn-primary mb-4" type="button" onclick="fetch_data()">Fetch data</button>
+        <div class="card" id="datecard">
+            <div class="card-body" id="cdate">
+                <h3>Date:</h3> 
+            </div>            
+        </div>
+    
+    <div class="row mt-2" id="share_price">
+        <div class="col">
+            <div class="card" id="share_max">
+                <h3>Max:</h3>
+
+
+            </div>
+
+        </div>
+         <div class="col">
+            <div class="card" id="share_min">
+                <h3>Min:</h3>
+
+
+            </div>
+
+        </div>
+          
+    </div>
+<div id="curve_chart" style="width: 900px; height: 500px; margin-left: auto; margin-right: auto;"></div>
+</div>
+    <script>
+        document.getElementById('datecard').style.visibility = 'hidden'
+        document.getElementById('share_price').style.visibility = 'hidden'
+    </script>
+    <script src="stock.js">
+
+    </script>
+</body>
+</html>
